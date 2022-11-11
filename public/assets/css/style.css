@@ -1,3 +1,82 @@
 body{
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-size: 16pt;
+    color: #77A2FF;
+    /* margin-left: 20px; */
+}
+
+/* Shadow bottom */
+header, .presentation, .formation, .porteFolio, .centreInteret, footer{
+    box-shadow:  1px 2px 5px 1px #77A2FF;
+    background-color: #626262;
+}
+
+/* NavBar */
+/* NavBar Burger button/text */
+:root{
+    --bs-border-width: 0px; /*retire les bordures du bouton burger*/
+    --bs-light-rgb:#626262;/*retire le background de la navbar, qui est géré aussi par opacity*/
+}
+
+.navbar{
+    --bs-navbar-toggler-focus-width: 0; /*retire la bordure au clic sur le bouton burger*/
+    --bs-navbar-color:#77A2FF;/*Couleur des items de la liste de la navbar*/
+}
+
+.navbar-nav{
+    align-items: flex-end; /*alignement à droite de la liste de la navbar*/
+}
+
+.navbar-toggler-icon {
+    background: url("../img/Icones/iconeBurgerModifie.png");/*icone de burger personnalisé*/
+    background-size: 100%; /*Taille de l'icone burger dans le bouton*/
+    margin: 0;
+}
+
+ .navbar-toggler{
+    --bs-navbar-toggler-font-size:150%;/*Taille de l'icone burger par rapport à la taille d'origine*/
+}
+
+/* Porte folio */
+.porteFolio{
+    background: url("../img/Icones/iconeConstruction.png");
+    background-size: contain;
+    height: 100vw;
+}
+
+/* Centre d'intérêts */
+.img{
+    object-fit: cover;
+    margin-top: 15px;
+    opacity: 80%;
+    border: 1px solid #77A2FF;
+}
+
+.img1, .img3, .img5{
+    margin-left: 26px;
+  }
+
+.img2, .img4, .img6{
+    margin-right: 26px;
+}
+
+/* Footer */
+.iconePhone{
+    height: 20px;
+}
+
+.iconeEmail{
+    height: 16px;
+    width: 16px;
+}
+.imgLinkedin{
+    height: 35px;
+}
+
+.imgFacebook{
+    height: 35px;
 }
