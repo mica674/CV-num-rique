@@ -1,176 +1,196 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="public/assets/css/style.css">
     <title>CV numérique Mickaël FOURNIER</title>
 </head>
+
 <body>
     <!-- HEADER -->
     <header>
+        <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><h1>Développeur web junior</h1></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#presentation">Présentation</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#formations">Formations</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#porteFolio">Porte folios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#centreInterets">Centre d'intérêts</a>
-                  </li>
-                </ul>
-              </div>
+                <a class="navbar-brand" href="#">
+                    <h1>Développeur web junior</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  d-flex ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#presentation">Présentation</a>
+                        </li>
+                        <li class="nav-item mx-lg-5">
+                            <a class="nav-link" href="#formations">Formations</a>
+                        </li>
+                        <li class="nav-item mx-lg-5">
+                            <a class="nav-link" href="#porteFolio">Porte folios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#centreInterets">Centre d'intérêts</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
+        </nav>
+        <!-- NAVBAR end -->
     </header>
+    <!-- HEADER end -->
     <!-- MAIN -->
     <main>
         <!-- Présentation -->
-        <div class="presentation container-fluid" id="presentation">
-            <div class="row">
-                <div class="col">
-                    <h2>Présentation</h2>
-                </div>
-                <div class="col12">
-                    <p>En reconversion professionnelle dans le but de devenir développeur web & web mobile junior</p>
-                    <p>&lt;Polyvalence&gt; & &lt;esprit ouvert&gt;</p>
-                </div>
+        <span id="presentation"></span>
+        <div id="presentationContainer">
+            <div id="presentationBg"></div>
+            <div id="presentationContent">
+                <h2 class="mt-2 mb-5 ms-2">Présentation</h2>
+                <p class="text-center mx-3 my-5">En reconversion professionnelle dans le but de devenir développeur web
+                    & web mobile junior</p>
+                <p class="text-center">&lt;Polyvalence&gt; & &lt;esprit ouvert&gt;</p>
             </div>
         </div>
+
+        <!-- Separate line -->
+        <hr>
 
         <!-- Skills/Formations/XP -->
         <div class="formation container-fluid" id="formations">
             <div class="row">
-                <!-- Skills -->
-                <div class="col">Skills
-                    <ul class="listSkills">
-                        <li><h3>HTML5 & CSS3</h3></li>
-                        <li><h3>PHP & mySQL</h3></li>
-                        <li>
-                            <div class="frameworks">
-                                <h3>Frameworks</h3>
-                                <p>Bootstrap, Symphony, Angular</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="js">
-                                <h3>js</h3>
-                                <p>JavaScript</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="cms">
-                                <h3>CMS</h3>
-                                <p>Wordpress</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- FORMATIONS -->
-                <div class="col">Formations
-                    <ul class="listFormations">
-                        <li>
-                            <div class="row">
-                                <div class="col"><h3>FANUC CNC</h3></div>
-                                <div class="col"><span>2020</span></div>
-                                <div class="col"><span>Robot</span></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row">
-                                <div class="col"><h3>FANUC TPE B</h3></div>
-                                <div class="col"><span>2018</span></div>
-                                <div class="col"><span>Robot</span></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row">
-                                <div class="col"><h3>Licence OOP</h3></div>
-                                <div class="col"><span>2017</span></div>
-                                <div class="col"><span>Optimisation de prod.</span></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row">
-                                <div class="col"><h3>Licence SEA</h3></div>
-                                <div class="col"><span>2016</span></div>
-                                <div class="col"><span>Electronique automobile</span></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row">
-                                <div class="col">DUT GMP</div>
-                                <div class="col">2015</div>
-                                <div class="col">Génie mécanique</div>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="col-12 col-lg-6">
+                    <div class="row">
+                        <!-- Skills -->
+                        <div class="col-6 skills">
+                            <h3 class="text-center my-3">Skills</h3>
+                            <ul class="skillsList p-0 ms-lg-1">
+                                <li class="d-flex align-items-center p-3">HTML5 & CSS3<img class="imgHtml ms-4 d-none d-lg-inline" src="/public/assets/img/Icones/htmlcss.png"></li>
+                                <li class="d-flex align-items-center p-3">PHP & mySQL <img class="imgPhp ms-4 d-none d-lg-inline" src="/public/assets/img/Icones/phpmysql.png"></li>
+                                <li class="d-flex align-items-center p-3">Frameworks<img class="imgBootstrap d-none d-lg-inline" src="/public/assets/img/Icones/bootstrap.png">
+                                    <small>Bootstrap</small>
+                                </li>
+                                <li class="d-flex align-items-center p-3">JavaScript<img class="imgJs d-none d-lg-inline" src="/public/assets/img/Icones/js.png"></li>
+                                <li class="d-flex align-items-center p-3">CMS<img class="imgWordpress d-none d-lg-inline" src="/public/assets/img/Icones/WordPress-Logo.png">
+                                    <small>Wordpress</small>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- FORMATIONS -->
+                        <div class="col-6">
+                            <h3 class="text-center my-3">Formations</h3>
+                            <ul class="formationsList p-0">
+                                <li>FANUC CNC
+                                    <small>2020</small>
+                                    <div class="d-none">Robot</span></div>
+                                </li>
+                                <li>FANUC TPE B
+                                    <small>2018</small>
+                                </li>
+                                <li>Licence OOP
+                                    <small>2017</small>
+                                    <small>Optimisation de prod.</small>
+                                </li>
+                                <li>Licence SEA
+                                    <small>2016</small>
+                                    <small>Electronique automobile</small>
+                                </li>
+                                <li>DUT GMP
+                                    <small>2015</small>
+                                    <small>Génie mécanique</small>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
                 <!-- EXPERIENCES/XP -->
-                <div class="col">
-                    <div class="row">
-                        <div class="col">
-                            <h3>Automaticien/Electricien</h3>
+                <div class="col-12 col-lg-6 xpList">
+                    <div class="row my-2 pb-3">
+                        <div class="col-12 text-center">
+                            <h3 class="fw-bold">Automaticien/Electricien</h3>
+                        </div>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-2 xpYear">4 ans</div>
+                                <div class="col-10 xpDescription"> <span>Intégrateur pour machines spéciales<br></span>
+                                    <span>Schéma électrique, câblage et paramétrage<br></span>
+                                    <span>Programme interface & automate<br></span>
+                                    <span>Mise au point<br></span>
+                                    <span>Formation opérateurs<br></span>
+                                    <small>THIRARD</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">4 ans</div>
-                        <div class="col">
-                            <span>Intégrateur pour machines spéciales<br></span>
-                            <span>Schéma électrique, câblage et paramétrage<br></span>
-                            <span>Programme interface & automate<br></span>
-                            <span>Mise au point<br></span>
-                            <span>Formation opérateurs<br></span>
+                    <div class="row my-2 pb-2">
+                        <div class="col-12 text-center">
+                            <h3 class="fw-bold">Apprenti amélioration continue</h3>
                         </div>
-                        <div class="col">THIRARD</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <h3>Apprenti amélioration continue</h3>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-2 xpYear">1 an</div>
+                                <div class="col-10 xpDescription">
+                                    <span>Mise en place d'instructions de travail<br></span>
+                                    <span>Modification de l'organisation complète d'un GAP<br></span>
+                                    <small>FAURECIA</small>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">1 an</div>
-                        <div class="col">
-                            <span>Mise en place d'instructions de travail<br></span>
-                            <span>Modification de l'organisation complète d'un GAP<br></span>
-                        </div>
-                        <div class="col">FAURECIA</div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Separate line -->
+        <hr>
 
         <!-- Porte folio -->
         <div class="porteFolio text-center text-white fw-bold pt-3" id="porteFolio">
             EN COURS DE CONSTRUCTION..
         </div>
 
+        <!-- Separate line -->
+        <hr>
+
+
         <!-- Centre d'intérêts -->
         <div class="centreInteret container-fluid" id="centreInterets">
             <div class="row">
-                <div class="col"><img class="rounded-circle img img1" src="public/assets/img/centreInteret/VTT.jpg" alt="" width="117px" height="117px"></div>
-                <div class="col"><img class="rounded-circle img img2" src="public/assets/img/centreInteret/Basket.jpg" alt="" width="117px" height="117px"></div>
-                <div class="col"><img class="rounded-circle img img3" src="public/assets/img/centreInteret/kravmaga2.webp" alt="" width="117px" height="117px"></div>
-                <div class="col"><img class="rounded-circle img img4" src="public/assets/img/centreInteret/mécanique.jpeg" alt="" width="117px" height="117px"></div>
-                <div class="col"><img class="rounded-circle img img5" src="public/assets/img/centreInteret/electriciter.jpeg" alt="" width="117px" height="117px"></div>
-                <div class="col mb-3"><img class="rounded-circle img img6" src="public/assets/img/centreInteret/domotique.jpeg" alt="" width="117px" height="117px"></div>
+                <div class="col-6 col-lg-2 rounded-circle ci1 img d-flex justify-content-center align-items-center mx-3">
+                    <div class="contentSpan">VTT</div>
+                </div>
+                <div class="col-6 col-lg-2 d-flex flex-column justify-content-center ciContent">
+                    <span>BASKET</span>
+                    <img class="rounded-circle img" src="public/assets/img/centreInteret/Basket.jpg" alt="">
+                </div>
+                <div class="col-6 col-lg-2 d-flex justify-content-center">
+                    <img class="rounded-circle img" src="public/assets/img/centreInteret/kravmaga2.webp" alt="">
+                </div>
+                <div class="col-6 col-lg-2 d-flex justify-content-center">
+                    <img class="rounded-circle img" src="public/assets/img/centreInteret/mécanique.jpeg" alt="">
+                </div>
+                <div class="col-6 col-lg-2 d-flex justify-content-center">
+                    <img class="rounded-circle img" src="public/assets/img/centreInteret/electriciter.jpeg" alt="">
+                </div>
+                <div class="col-6 col-lg-2 d-flex justify-content-center">
+                    <img class="rounded-circle img" src="public/assets/img/centreInteret/domotique.jpeg" alt="">
+                </div>
             </div>
         </div>
     </main>
+
+
+    <!-- Separate line -->
+    <hr>
+
 
     <!-- FOOTER -->
     <footer>
@@ -178,23 +198,48 @@
             <div class="row ">
                 <div class="col-8 mt-2">
                     <div class="row">
-                        <div class="col-1"><img class="iconePhone" src="public/assets/img/Icones/iconePhone.png" alt="icone phone"></div>
-                        <div class="col-10 text-white"><span>0658036270</span></div>
+                        <div class="col-1">
+                            <a href="tel:+33658036270">
+                                <img class="iconePhone" src="public/assets/img/Icones/iconePhone.png" alt="icone phone">
+                            </a>
+                        </div>
+                        <div class="col-10 text-white">
+                            <a href="tel:+33658036270">
+                                <span class="phoneNumber">0658036270</span>
+                            </a>
+                        </div>
                     </div>
                     <div class="row my-1">
-                        <div class="col-1"><img class="iconeEmail" src="public/assets/img/Icones/iconeEmail.png" alt="icone email"></div>
-                        <div class="col-10 text-white"><span>mica.fournier@hotmail.fr</span></div>
+                        <div class="col-1">
+                            <a href="mailto:mica.fournier@hotmail.fr">
+                                <img class="iconeEmail" src="public/assets/img/Icones/iconeEmail.png" alt="icone email">
+                            </a>
+                        </div>
+                        <div class="col-10 text-white">
+                            <a href="mailto:mica.fournier@hotmail.fr">
+                                <span class="emailAdress">mica.fournier@hotmail.fr</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-1 offset-1">
-                    <img class="imgLinkedin mt-3" src="public/assets/img/Icones/linkedin.png" alt="logo linkedin">
+                    <a href="https://www.linkedin.com/in/mickaël-fournier-229936b8" target="_blank">
+                        <img class="imgLinkedin mt-3" src="public/assets/img/Icones/linkedin.png" alt="logo linkedin">
+                    </a>
                 </div>
                 <div class="col-1 ms-3">
-                    <img class="imgFacebook mt-3" src="public/assets/img/Icones/facebook.png" alt="logo facebook">
+                    <a href="https://www.facebook.com/mica.elee.98" target="_blank">
+                        <img class="imgFacebook mt-3" src="public/assets/img/Icones/facebook.png" alt="logo facebook">
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <script src="./public/assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
